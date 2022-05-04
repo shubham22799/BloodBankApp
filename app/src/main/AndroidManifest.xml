@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bloodbankapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".global.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodBankApp">
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activities.SplashScreen"
+            android:theme="@style/Theme.BloodBankApp.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.QuatesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BloodBankApp.StatusBarPink" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BloodBankApp.StatusBarPink" />
+
+        <activity
+            android:name=".activities.NearestDonorActivity"
+            android:exported="true"
+            android:parentActivityName=".activities.FindDonorActivity" />
+
+        <activity
+            android:name=".activities.DetailBloodBankActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".activities.AmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BloodBankActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activities.HelpdeskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FaqActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddCampActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.FindDonorActivity"
+            android:exported="true"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <activity
+            android:name=".activities.RequestBloodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ReportUsActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.bloodbankapp"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_file" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDm53Jq-mU0oqqNFPrfn5u9msMTCppohDk"/>
+    </application>
+</manifest>

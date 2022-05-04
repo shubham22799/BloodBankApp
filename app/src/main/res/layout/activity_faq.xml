@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.FaqActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/faq_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                android:gravity="bottom"
+                android:paddingTop="15dp"
+                app:title="@string/faq" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/faq_toolbar"
+                android:layout_alignBottom="@+id/faq_toolbar"
+                android:layout_marginEnd="15dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_faq_icon"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_after_drinking"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_can_i_don"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toBottomOf="@+id/q1"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_can_i_donate_b"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toBottomOf="@+id/q2"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_can_a_diabetic"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toBottomOf="@+id/q3"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_is_there_any_side"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toBottomOf="@+id/q4"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_is_it_safe_t"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toBottomOf="@+id/q5"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/q7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/light_pink_round_corner_shape2"
+            android:elevation="1dp"
+            android:padding="5dp"
+            android:text="@string/q_can_i_donate_blood"
+            android:textColor="@color/pink"
+            app:layout_constraintTop_toBottomOf="@+id/q6"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/faq_illustration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

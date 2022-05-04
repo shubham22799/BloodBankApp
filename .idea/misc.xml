@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/button_bg_selector2.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/dark_grey_round_corner_shape.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/happy_emoji_selector.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_about_us_illustration.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_arrow_back.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_donation_matters_popup.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_empty_box_illustration.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_extrem_sad_emoji_2.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_faq_icon.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_happy_emoji.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_happy_emoji2.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_neutral_emoji2.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_plasma_popup.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_pletelets_popup.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_profile.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/ic_whole_blood_popup.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/light_pink_round_corner_shape2.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/nutral_emoji_selector.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/pink_round_corner_shape2.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/white_round_corner_shape.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable-v24/white_round_corner_shape2.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/button_txtcolor_selector.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/extrem_sad_emoji_selector.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/grey_round_corner_shape.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_ambulance.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_blood_bank.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_blood_donation_illustration.xml" value="0.102" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_blood_donor_hand_icon.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_customer_support_illustration.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_direction.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_down_arrow.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_extrem_sad_emoji.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_eye.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_hamburger_icon.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_happy_emoji2.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_login_illustration.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_my_location.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_neutral_emoji.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_person.xml" value="0.139" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_profile_vector2.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_profile_white.xml" value="0.137" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_right_swap_icon_vector.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ic_table_1.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/pink_stroke.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/progress_bar_style.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/ripple_effect.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/visiblity_sellector.xml" value="0.1675" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/drawable/white_stroke.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/AndroidManifest.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_about_us.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_add_camp.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_ambulance.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_blood_bank.xml" value="0.2" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_detail_blood_bank.xml" value="0.2" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_faq.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_feedback.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_find_donor.xml" value="0.16" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_helpdesk.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_nearest_donor.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_quatespage.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_report_us.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_request_blood.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/app_bar_main.xml" value="0.446676970633694" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/camera_gallery_popup.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/confirm_order_layout.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/donation_matters_popup.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/edit_user_layout.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/faq_popup_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/fragment_home.xml" value="0.4948630136986301" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/fragment_information.xml" value="0.2" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/fragment_map.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/fragment_notification.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/ic_donation_matters_popup.xml" value="0.11145833333333334" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/item_ambulance.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/item_blood_bank.xml" value="0.1" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/plasma_popup.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/platelet_popup.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/round_corner_white_stroke.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/side_nav_bar.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/snack_bar_layout.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/submit_popup.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/layout/whole_blood_popup.xml" value="0.264" />
+        <entry key="..\:/Users/stand/AndroidStudioProjects/BloodBankApp/app/src/main/res/menu/settings.xml" value="0.125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

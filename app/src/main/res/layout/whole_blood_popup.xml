@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_round_corner_shape"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/whole_blood_is_the_most"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_from_one_do"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/the_average_adult"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/red_blood_cells_have_a_short_shelf_life_they_only_last_for_6_weeks_42_days"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/donating_whole_blood_takes_only_about_10_15_minutes"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/you_can_donate_whole_blood_every_56_days_and_we_encourage_you_to_donate_as_often_as_possible"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+    <!--    Whole blood is the most common type of donation.-->
+    <!--    Blood from one donation can be divided into two components: red blood cells and plasma.-->
+    <!--    The average adult has about 10 pints of blood, but a typical whole-blood donation is only 1 pint.-->
+    <!--    Red blood cells have a short shelf life. They only last for 6 weeks (42 days).-->
+    <!--        Donating whole blood takes only about 10-15 minutes.-->
+    <!--    You can donate whole blood every 56 days—and we encourage you to donate as often as possible.-->

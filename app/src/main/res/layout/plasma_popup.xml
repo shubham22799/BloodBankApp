@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_round_corner_shape"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/plasma_is_the_light_yellow_liquid_in_your_blood_that_makes_up_50_of_total_blood_volume_it_contains_proteins_that_help_control_bleeding_and_fight_infections"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/it_s_used_to_treat_various_types_of_bleeding_disorders_it_s_also_given_to_patients_who_have_suffered_major_traumatic_injuries"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/plasma_can_be_frozen_for_up_to_a_year"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/if_you_have_type_ab_blood_you_are_a_universal_plasma_donor"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/people_who_have_blood_types_ab_ab_negative_a_a_negative_b_or_b_negative_also_are_ideal_donors_for_platelets"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/donors_are_connected_to_a_machine_that_separates_out_plasma_and_returns_red_cells_to_the_body"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/plasma_donation_takes_about_40_minutes"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/you_may_donate_plasma_every_28_days"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--Plasma is the light yellow liquid in your blood that makes up 50% of total blood volume. It contains proteins that help control bleeding and fight infections.-->
+    <!--It's used to treat various types of bleeding disorders. It's also given to patients who have suffered major traumatic injuries.-->
+    <!--Plasma can be frozen for up to a year.-->
+    <!--If you have type AB blood, you are a universal plasma donor.-->
+    <!--People who have blood types AB, AB-negative, A, A-negative, B or B-negative also are ideal donors for platelets.-->
+    <!--Donors are connected to a machine that separates out plasma and returns red cells to the body.-->
+    <!--Plasma donation takes about 40 minutes.-->
+    <!--You may donate plasma every 28 days.-->

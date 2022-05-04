@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="370dp"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/req_blood"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/request_blood"
+            android:textColor="@color/pink"
+            android:textSize="14sp"
+            tools:ignore="NestedWeights,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/find_donor"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/find_donor"
+            android:textColor="@color/pink"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/add_camp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:fontFamily="@font/manrope_semibold"-->
+<!--            android:paddingStart="40dp"-->
+<!--            android:text="@string/add_camp"-->
+<!--            android:textColor="@color/pink"-->
+<!--            android:textSize="14sp"-->
+<!--            tools:ignore="RtlSymmetry" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/message"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:fontFamily="@font/manrope_semibold"-->
+<!--            android:paddingStart="40dp"-->
+<!--            android:text="@string/message"-->
+<!--            android:textColor="@color/pink"-->
+<!--            android:textSize="14sp"-->
+<!--            tools:ignore="RtlSymmetry" />-->
+
+        <TextView
+            android:id="@+id/community"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/community"
+            android:textColor="@color/pink"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/track_order"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/track_your_order"
+            android:textColor="@color/pink"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/pink_round_corner_shape"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/about_us"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="NestedWeights,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/feedback"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/report_us"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/report_us"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/faq"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/help_desk"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/help_desk"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="40dp"
+            android:text="@string/logout"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+</LinearLayout>

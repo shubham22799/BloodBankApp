@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context=".activities.QuatesActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:id="@+id/savlife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/pulang"
+        android:text="@string/savlife"
+        android:textAppearance="@style/savlife"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/heart_anima"
+        android:layout_width="294dp"
+        android:layout_height="175dp"
+        android:layout_weight="2"
+        android:src="@drawable/ic_blood_donation_illustration"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/every_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:fontFamily="@font/manrope_semibold"
+            android:text="@string/every_blood"
+            android:textAppearance="@style/every_blood" />
+
+        <TextView
+            android:id="@+id/life_saver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_semibold"
+            android:gravity="center"
+            android:text="@string/life_saver"
+            android:textAppearance="@style/life_saver" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_right_swap_icon_vector"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/transperent"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

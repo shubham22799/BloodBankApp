@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:gravity="center"
+    tools:context=".activities.SplashScreen">
+
+    <TextView
+        android:clickable="false"
+        android:focusable="false"
+        android:translationZ="10dp"
+        android:id="@+id/savlife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignTop="@+id/heart_gif"
+        android:layout_alignBottom="@+id/heart_gif"
+        android:layout_alignStart="@+id/heart_gif"
+        android:layout_alignEnd="@+id/heart_gif"
+        android:fontFamily="@font/pulang"
+        android:text="@string/savlife"
+        android:textAppearance="@style/savlife"
+        android:textSize="40sp" />
+
+    <pl.droidsonroids.gif.GifImageButton
+        android:clickable="false"
+        android:focusable="false"
+        android:id="@+id/heart_gif"
+        android:translationZ="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:src="@drawable/animation_300_l1ottk0g" />
+</RelativeLayout>

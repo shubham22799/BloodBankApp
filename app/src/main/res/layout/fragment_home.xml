@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_gradient_rec"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/white_round_corner_shape"
+                    android:drawableEnd="@drawable/ic_search_icon_group"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:orientation="horizontal"
+                    android:paddingEnd="14sp"
+                    tools:ignore="RtlSymmetry">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:autofillHints=""
+                        android:background="@color/transperent"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:hint="@string/search"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_search_icon_group" />
+
+                    <ImageView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_voice_search_icon_group" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp">
+
+                    <RadioButton
+                        android:id="@+id/blood"
+                        android:layout_width="83dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/button_bg_selector2"
+                        android:button="@null"
+                        android:checked="true"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="@string/blood"
+                        android:textAllCaps="true"
+                        android:textColor="@drawable/button_txtcolor_selector"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/plasma"
+                        android:layout_width="83dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/button_bg_selector2"
+                        android:button="@null"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="@string/plasma"
+                        android:textAllCaps="true"
+                        android:textColor="@drawable/button_txtcolor_selector"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/platelet"
+                        android:layout_width="83dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/button_bg_selector2"
+                        android:button="@null"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="@string/platelet"
+                        android:textAllCaps="true"
+                        android:textColor="@drawable/button_txtcolor_selector"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:src="@drawable/ic_blood_donation_illustration2"
+                        android:translationZ="10dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="60dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/white_round_corner_shape"
+                            android:elevation="4dp">
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="@font/manrope_semibold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/blood_donation_camp"
+                                android:textColor="@color/pink"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text1"
+                                android:gravity="center_horizontal"
+                                android:text="@string/organized_by" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="90dp"
+                                    android:layout_marginTop="20dp"
+                                    android:hint="@string/date"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="90dp"
+                                    android:hint="@string/time"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="90dp"
+                                    android:hint="@string/address"
+                                    android:lines="3"
+                                    android:maxLines="3"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/blood_bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:gravity="center"
+                        android:text="@string/blood_bank"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_blood_bank" />
+
+                    <TextView
+                        android:id="@+id/ambulance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:gravity="center"
+                        android:text="@string/ambulance"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_ambulance" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/savlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/pulang"
+                        android:text="@string/savlife"
+                        android:textColor="@color/pink"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/emergency_a"
+                        android:layout_width="331dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/emergency_a"
+                        android:textColor="@color/text_color" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_round_corner_shape"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/platelets_are_s"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/they_are_donated"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/patients_who_need"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/platelets_do_not_last_long_they_have_a_shelf_life_of_just_5_days"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/those_who_have_a_a_negative_b_b_negative_ab_or_ab_negative_blood_types_are_strongly_encouraged_to_donate_platelets"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/donors_are_connected_to_a_machine_that_separates_platelets_and_some_plasma_from_the_blood_and_returns_the_red_cells_and_most_of_the_plasma_back_to_the_donor"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/donating_platelets_takes_approximately_90_minutes"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/you_can_donate_platelets_every_7_days_up_to_24_times_a_year"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+    <!--Platelets are small, disc-shaped cells that aid in blood clotting.-->
+    <!--They are donated most often to cancer patients, organ recipients and those undergoing heart surgeries.-->
+    <!--Patients who need platelets often require multiple transfusions. That's why it's so important to donate as often as you can.-->
+    <!--Platelets do not last long. They have a shelf life of just 5 days.-->
+    <!--Those who have A, A-negative, B, B-negative, AB or AB-negative blood types are strongly encouraged to donate platelets.-->
+    <!--Donors are connected to a machine that separates platelets and some plasma from the blood and returns the red cells (and most of the plasma) back to the donor.-->
+    <!--Donating platelets takes approximately 90 minutes.-->
+    <!--You can donate platelets every 7 days, up to 24 times a year.-->

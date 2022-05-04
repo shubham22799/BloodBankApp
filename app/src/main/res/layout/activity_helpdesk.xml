@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.HelpdeskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/help_desk_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:gravity="bottom"
+            android:paddingTop="15dp"
+            app:title="@string/help_desk" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_customer_support_illustration"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/we_are_here_to_help_you_24_7"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:fontFamily="@font/manrope_semibold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/our_customer"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/manrope_semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            android:fontFamily="@font/manrope_semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textColor="@color/text_color"
+            android:textSize="22sp"
+            android:layout_marginVertical="30dp"
+            android:fontFamily="@font/manrope_semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mail_us"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:fontFamily="@font/manrope_semibold"/>
+
+        <TextView
+            android:layout_marginVertical="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helppeople_gmail_com"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            android:fontFamily="@font/manrope_semibold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

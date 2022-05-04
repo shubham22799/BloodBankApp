@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_round_corner_shape"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:paddingHorizontal="10dp"
+        android:text="@string/there_are_no_substitutes_for_blood_platelets_or_plasma_they_cannot_be_manufactured_patients_in_need_of_blood_or_blood_products_must_rely_on_donations_from_people_like_you_those_who_are_hesitant_about_donating_blood_for_the_first_time_often_find_that_the_donation_process_is_easy_and_that_saving_lives_is_deeply_gratifying"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        tools:targetApi="o" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/text_color"
+                android:text="@string/just_1_donation_can_save_up_to_3_lives"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_average_red_blood_cell_transfusion_is_3_pints_or_3_whole_blood_donations"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/more_than_1_million_people_every_year_are_diagnosed_with_cancer_for_the_first_time_many_of_them_will_need_blood_sometimes_daily_during_chemotherapy"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/more_than_38_000_blood_donations_are_needed_every_day"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/type_o_negative_whole_blood_can_be_transfused_to_people_with_any_blood_type_but_this_type_of_blood_is_rare_and_supplies_of_it_are_low"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingHorizontal="5dp"
+                android:text="@string/bullet"
+                android:textColor="@color/text_color"
+                android:translationZ="10dp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/type_ab_plasma_can_be_transfused_to_patients_with_all_other_blood_types_but_it_s_also_in_short_supply"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<!--Just 1 donation can save up to 3 lives.-->
+<!--The average red blood cell transfusion is 3 pints (or 3 whole-blood donations).-->
+<!--More than 1 million people every year are diagnosed with cancer for the first time. Many of them will need blood—sometimes daily—during chemotherapy.-->
+<!--More than 38,000 blood donations are needed every day.-->
+<!--Type O-negative whole blood can be transfused to people with any blood type, but this type of blood is rare, and supplies of it are low.-->
+<!--Type AB plasma can be transfused to patients with all other blood types, but it's also in short supply.-->
