@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
             binding.sideDrawer.close()
         }
         logOut.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, LoginRegisterActivity::class.java))
             binding.sideDrawer.close()
             SharedPreferencesManager.putUserStatus(false)
             SharedPreferencesManager.clearSharedPreferences()

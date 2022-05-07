@@ -1,19 +1,20 @@
 package com.example.bloodbankapp.model
 
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import okhttp3.ResponseBody
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiService {
-    @FormUrlEncoded
+    @Multipart
     @POST("registration.php")
     fun registerUser(
-        @Field("username") username: String,
-        @Field("password") password: String,
-        @Field("email") email: String,
-        @Field("phone") phone: String,
-        @Field("image") image: String
+        @Part("username") username: RequestBody,
+        @Part("password") password: RequestBody,
+        @Part("email") email: RequestBody,
+        @Part("phone") phone: RequestBody,
+        @Part image: MultipartBody.Part,
     ): Call<RegisterOrUpdate>
 
     @FormUrlEncoded

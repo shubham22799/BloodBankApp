@@ -26,11 +26,12 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.util.PatternsCompat
 import com.example.bloodbankapp.R
-import com.example.bloodbankapp.databinding.ActivityLoginBinding
+import com.example.bloodbankapp.databinding.ActivityLoginRegisterBinding
 import com.example.bloodbankapp.di.ApiModule
 import com.example.bloodbankapp.model.Login
 import com.example.bloodbankapp.model.RegisterOrUpdate
 import com.example.bloodbankapp.utility.ContractBloodBankApp
+import com.example.bloodbankapp.utility.RealPathUtil
 import com.example.bloodbankapp.utility.SharedPreferencesManager
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -39,22 +40,27 @@ import com.karumi.dexter.MultiplePermissionsReport
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.ByteArrayOutputStream
 import java.io.File
 
-class LoginActivity : AppCompatActivity() {
-    lateinit var binding: ActivityLoginBinding
+class LoginRegisterActivity : AppCompatActivity() {
+    lateinit var binding: ActivityLoginRegisterBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var file: File
-    private val TAG = LoginActivity::class.simpleName
+    private val TAG = LoginRegisterActivity::class.simpleName
     private var profileImageStatus = false
+
+    private lateinit var path: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLoginRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
 
@@ -161,9 +167,9 @@ class LoginActivity : AppCompatActivity() {
                 SharedPreferencesManager.putGender(userData?.gender)
 //                SharedPreferencesManager.putAge(userData?.)
                 SharedPreferencesManager.putUserStatus(true)
-                Toast.makeText(this@LoginActivity, "Login Successfully!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@LoginRegisterActivity, "Login Successfully!", Toast.LENGTH_SHORT).show()
                 binding.loginPb.visibility = View.GONE
-                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                startActivity(Intent(this@LoginRegisterActivity, MainActivity::class.java))
                 Log.v("When Login:", SharedPreferencesManager.getUserStatus().toString())
             }
 
@@ -250,15 +256,25 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
-        val profileImage =
-        Log.v("Profile Image", SharedPreferencesManager.getImage().toString())
-        val builder = ApiModule.apiService.registerUser(userNameRegister, passwordRegister,
-            emailRegister, "9920304567", "Image")
+        val file = File(path)
+        val requestFile = RequestBody.create("multipart/form-data".toMediaTypeOrNull(), file)
+        val body: MultipartBody.Part = MultipartBody.Part.createFormData("image", file.name, requestFile)
+
+        var name =  RequestBody.create("multipart/form-data".toMediaTypeOrNull(), userNameRegister)
+        var password =  RequestBody.create("multipart/form-data".toMediaTypeOrNull(), passwordRegister)
+        var email =  RequestBody.create("multipart/form-data".toMediaTypeOrNull(), emailRegister)
+        var phone =  RequestBody.create("multipart/form-data".toMediaTypeOrNull(), phoneRegister)
+
+//        val profileImage =
+//        Log.v("Profile Image", SharedPreferencesManager.getImage().toString())
+        val builder = ApiModule.apiService.registerUser(name, password,
+            email, phone, body)
+
         builder.enqueue(object :Callback<RegisterOrUpdate>{
             override fun onResponse(call: Call<RegisterOrUpdate>, response: Response<RegisterOrUpdate>) {
                 val data = response.body()?.message
                 Log.v("Register", data.toString())
-                Toast.makeText(this@LoginActivity, "Registered Successfully!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@LoginRegisterActivity, "Registered Successfully!", Toast.LENGTH_SHORT).show()
                 binding.llMain.visibility = View.GONE
                 binding.llLogin.visibility = View.VISIBLE
                 binding.llRegister.visibility = View.GONE
@@ -271,7 +287,7 @@ class LoginActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<RegisterOrUpdate>, t: Throwable) {
                 Log.v("Register", t.message.toString())
-                Toast.makeText(this@LoginActivity, t.message, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@LoginRegisterActivity, t.message, Toast.LENGTH_SHORT).show()
             }
         })
 
@@ -357,14 +373,20 @@ class LoginActivity : AppCompatActivity() {
             if (result.resultCode == RESULT_OK) {
                 val uri: Uri? = result.data?.data
                 if (uri != null) {
+                    path = RealPathUtil.getRealPath(this, uri)
+
+                    val bitmap = BitmapFactory.decodeFile(path)
+
+                    binding.profileImage.setImageBitmap(bitmap)
                     //convert Uri to Bitmap
-                    val galleryBitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
-                    binding.profileImage.setImageBitmap(galleryBitmap)
-                    val bitToString: String? = convertToBase64(galleryBitmap)
-                    Log.v("BitImage", bitToString.toString())
-                    if (bitToString != null) {
-                        SharedPreferencesManager.putImage(bitToString)
-                    }
+//                    val galleryBitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
+//
+//                    binding.profileImage.setImageBitmap(galleryBitmap)
+//                    val bitToString: String? = convertToBase64(galleryBitmap)
+//                    Log.v("BitImage", bitToString.toString())
+//                    if (bitToString != null) {
+//                        SharedPreferencesManager.putImage(bitToString)
+//                    }
                     profileImageStatus = true
                     return@registerForActivityResult
                 }
