@@ -13,7 +13,7 @@ interface ApiService {
         @Part("username") username: RequestBody,
         @Part("password") password: RequestBody,
         @Part("email") email: RequestBody,
-        @Part("phone") phone: RequestBody,
+        @Part("mobile") phone: RequestBody,
         @Part image: MultipartBody.Part,
     ): Call<RegisterOrUpdate>
 
