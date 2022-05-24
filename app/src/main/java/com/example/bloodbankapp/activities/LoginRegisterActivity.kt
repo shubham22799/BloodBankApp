@@ -160,20 +160,20 @@ class LoginRegisterActivity : AppCompatActivity() {
 //                Log.v(" Path Image", imgString.toString())
 //                val bitmap = BitmapFactory.decodeFile(imgString)
 
-//                SharedPreferencesManager.putEmailId(userData?.email )
-////                SharedPreferencesManager.putImage()
-//                SharedPreferencesManager.putUsername(userData?.username)
-//                SharedPreferencesManager.putPhone(userData?.mobile)
-//                SharedPreferencesManager.putAddress(userData?.address)
-//                SharedPreferencesManager.putBloodGroup(userData?.blood_group)
-//                SharedPreferencesManager.putDOB(userData?.date_of_birth)
-//                SharedPreferencesManager.putGender(userData?.gender)
-////                SharedPreferencesManager.putAge(userData?.)
-//                SharedPreferencesManager.putUserStatus(true)
-//                Toast.makeText(this@LoginRegisterActivity, "Login Successfully!", Toast.LENGTH_SHORT).show()
-//                binding.loginPb.visibility = View.GONE
-//                startActivity(Intent(this@LoginRegisterActivity, MainActivity::class.java))
-//                Log.v("When Login:", SharedPreferencesManager.getUserStatus().toString())
+                SharedPreferencesManager.putEmailId(userData?.email )
+//                SharedPreferencesManager.putImage()
+                SharedPreferencesManager.putUsername(userData?.username)
+                SharedPreferencesManager.putPhone(userData?.mobile)
+                SharedPreferencesManager.putAddress(userData?.address)
+                SharedPreferencesManager.putBloodGroup(userData?.blood_group)
+                SharedPreferencesManager.putDOB(userData?.date_of_birth)
+                SharedPreferencesManager.putGender(userData?.gender)
+//                SharedPreferencesManager.putAge(userData?.)
+                SharedPreferencesManager.putUserStatus(true)
+                Toast.makeText(this@LoginRegisterActivity, "Login Successfully!", Toast.LENGTH_SHORT).show()
+                binding.loginPb.visibility = View.GONE
+                startActivity(Intent(this@LoginRegisterActivity, MainActivity::class.java))
+                Log.v("When Login:", SharedPreferencesManager.getUserStatus().toString())
             }
 
             override fun onFailure(call: Call<Login>, t: Throwable) {

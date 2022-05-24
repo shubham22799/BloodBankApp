@@ -9,14 +9,18 @@ import android.os.SharedMemory
 import android.util.Base64
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.bloodbankapp.R
 import com.example.bloodbankapp.databinding.ActivityProfileBinding
 import com.example.bloodbankapp.di.ApiModule
 import com.example.bloodbankapp.model.RegisterOrUpdate
+import com.example.bloodbankapp.utility.ContractBloodBankApp
 import com.example.bloodbankapp.utility.SharedPreferencesManager
 import com.google.android.gms.common.api.Api
 import com.google.android.material.dialog.MaterialDialogs
+import com.google.android.material.snackbar.Snackbar
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -36,6 +40,7 @@ class ProfileActivity : AppCompatActivity() {
         binding.update.setOnClickListener {
             binding.showUserDetails.visibility = View.VISIBLE
             binding.editUserDetails.visibility = View.GONE
+            updateUser(it)
         }
         binding.btnEdit.setOnClickListener {
             binding.showUserDetails.visibility = View.GONE
@@ -45,13 +50,22 @@ class ProfileActivity : AppCompatActivity() {
         initialSetup()
     }
 
-    private fun updateUser() {
+    private fun updateUser(view: View) {
 
         val email = SharedPreferencesManager.getEmailId().toString()
         val bloodGroup = binding.bloodGroupTxt.text.toString().trim()
         val gender = binding.genderTxt.text.toString().trim()
         val dob = binding.dobTxt.text.toString().trim()
         val address = binding.addressTxt.text.toString().trim()
+
+        if (bloodGroup.isNullOrEmpty()){
+            onSnack(
+                view,
+                ContextCompat.getColor(this, R.color.pink),
+                ContractBloodBankApp.passwordLenght
+            )
+            return
+        }
         val builder = ApiModule.apiService.updateUser(email, bloodGroup, gender, dob, address)
 
         builder.enqueue(object : Callback<RegisterOrUpdate>{
@@ -91,6 +105,22 @@ class ProfileActivity : AppCompatActivity() {
             Base64.DEFAULT
         )
         return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.size)
+    }
+
+    private fun onSnack(view: View, texColor: Int, errorMessage: String) {
+        val snackBar =
+            Snackbar.make(view, errorMessage, Snackbar.LENGTH_LONG).setAction("Action", null)
+        val snackBarView = snackBar.view
+        //       snackBarView.setBackgroundColor(getColor(R.color.light_gray))
+        snackBarView.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+
+        val textView =
+            snackBarView.findViewById(com.google.android.material.R.id.snackbar_text) as TextView
+        textView.setTextColor(texColor)
+        textView.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
+        textView.textSize = 14f
+
+        snackBar.show()
     }
 
 }

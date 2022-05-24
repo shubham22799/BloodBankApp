@@ -203,4 +203,5 @@
     <string name="confirm_order">Confirm Order</string>
     <string name="APIKEY" translatable="false">AIzaSyCzOwr1gqc8WLckOZNZ-Mzu5_j6K2uwaCA</string>
     <string name="update">Update</string>
+    <string name="save">Save</string>
 </resources>

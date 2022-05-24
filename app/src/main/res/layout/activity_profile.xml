@@ -357,18 +357,16 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:visibility="visible"
-        android:paddingHorizontal="20dp">
+        android:paddingHorizontal="20dp"
+        android:visibility="visible">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/edit_profile_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/ic_profile"
-            android:elevation="10dp"
-            app:civ_border_color="@color/white"
-            app:civ_border_width="4dp" />
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/text_color"
+            android:textSize="35sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -385,6 +383,7 @@
                 android:layout_weight="1"
                 android:clickable="false"
                 android:focusable="false"
+                android:hint="blood"
                 android:fontFamily="@font/manrope_semibold"
                 android:textColor="@color/text_color"
                 android:textSize="14sp" />
@@ -505,16 +504,17 @@
                 android:src="@drawable/ic_edit" />
 
         </LinearLayout>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/update"
             android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginTop="30dp"
-            android:layout_height="wrap_content"
-            android:text="@string/update"
-            android:textSize="18sp"
-            android:textColor="@color/white"
             android:background="@drawable/pink_round_corner_shape"
-            android:fontFamily="@font/manrope_semibold"/>
+            android:fontFamily="@font/manrope_semibold"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
     </LinearLayout>
 </RelativeLayout>
